@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Budeget</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../Boostrap/bootstrap.min.css">
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <h1 style="color: #547ef9">Budget Application</h1>
+                    <div class="col-md-4 shadow-lg p-4">
+                        <h4 style="color: #547ef9;">Budget</h4>
+                        <form class="form">
+                            <input type="number" class="form-control mb-3" id="budget">
+                            <button class="btn text-white" style="background-color: #547ef9" id="budget-btn">Set Budget</button>
+                        </form>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7 shadow-lg p-4">
+                        <h4 style="color:#547ef9">Expence</h4>
+                        <form class="form">
+                            <input type="text" placeholder="Enter Product titel" class="form-control mb-3" id="title">
+                            <input type="number" placeholder="Enter Product cost"class="form-control mb-3" id="cost">
+                            <button class="btn text-white" style="background-color: #547ef9" id="product-btn">Set Product</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="col-md-2"></div>
+
+        <!-- start middle section codin -->
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 p-4 mt-5" style="background-color: #547ef9">
+                <div class="row">
+                    <div class="col-md-4 text-white text-center">
+                        <h5>Total Budget</h5>
+                        <p id="total-budget">100</p>
+                    </div>
+                    <div class="col-md-4 text-white text-center">
+                        <h5>Total Expence</h5>
+                        <p id="expence">0</p>
+                    </div>
+                    <div class="col-md-4 text-white text-center">
+                        <h5>Total Balance</h5>
+                        <p id="balance">0</p>
+                    </div>
+                </div>
+             </div>
+            <div class="col-md-2"></div>
+        </div>
+        <!-- end middle section coding -->
+        <div class="row mt-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"style="border-top: 5px solid #547ef9;">
+                <div id="expense_list">
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+<script src="../Boostrap/bootstrap.min.js"></script>
+<script src="../Boostrap/jquery.js"></script>
+<script src="../js/index.js"></script>
+</html>
